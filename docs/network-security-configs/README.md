@@ -7,9 +7,11 @@ This directory contains vendor-specific configuration templates for implementing
 ### Cisco
 - **[Cisco Switch Security Configuration](cisco-switch-security-config.md)** - Complete configuration guide for Cisco IOS, IOS-XE, and NX-OS switches
 
-### Other Vendors (Coming Soon)
+### UniFi
+- **[UniFi Security Configuration](unifi-security-config.md)** - Complete configuration guide for UniFi Network Controller
+
+## Other Vendors (Coming Soon)
 - **Aruba** - ArubaOS-Switch and ArubaOS-CX configurations
-- **UniFi** - Ubiquiti UniFi Network configurations
 - **Juniper** - Junos OS configurations for EX Series switches
 - **HPE** - HPE Aruba (ProCurve) configurations
 

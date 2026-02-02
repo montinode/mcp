@@ -87,7 +87,7 @@ We can provide precise configuration steps for your platform.
 
 ## Integration with AWS Network MCP Server
 
-This security documentation complements the [AWS Network MCP Server](./aws-network-mcp-server.md), which provides tools for:
+This security documentation complements the [AWS Network MCP Server](../servers/aws-network-mcp-server), which provides tools for:
 - Network troubleshooting
 - Flow log analysis
 - Security group analysis
@@ -100,7 +100,7 @@ Together, these resources help you secure and troubleshoot your network infrastr
 - [AWS Well-Architected Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [CIS Controls](https://www.cisecurity.org/controls)
-- [AWS Network MCP Server Documentation](./aws-network-mcp-server.md)
+- [AWS Network MCP Server Documentation](../servers/aws-network-mcp-server)
 
 ## Contributing
 

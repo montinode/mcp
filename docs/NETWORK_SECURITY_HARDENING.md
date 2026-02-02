@@ -359,39 +359,38 @@ This section provides configuration examples for common network equipment vendor
 
 ### Cisco IOS/IOS-XE Configuration
 
-**Coming in next update** - Will include specific configuration examples for:
-- Catalyst switches (IOS and IOS-XE)
-- Nexus switches (NX-OS)
-- Small business switches
-
-### Aruba Configuration
-
-**Coming in next update** - Will include specific configuration examples for:
-- ArubaOS-Switch
-- ArubaOS-CX
-- Aruba Central managed switches
+Complete configuration examples are available in the vendor-specific guide:
+- **[Cisco Switch Security Configuration](network-security-configs/cisco-switch-security-config.md)** - Detailed configuration for:
+  - Catalyst switches (IOS and IOS-XE)
+  - Step-by-step configuration commands
+  - Complete working examples
+  - Verification commands
+  - Troubleshooting guide
 
 ### UniFi Configuration
 
-**Coming in next update** - Will include specific configuration examples for:
-- UniFi Network Controller
-- UniFi switches
-- CLI and GUI configuration steps
+Complete configuration examples are available in the vendor-specific guide:
+- **[UniFi Security Configuration](network-security-configs/unifi-security-config.md)** - Detailed configuration for:
+  - UniFi Network Controller (UI)
+  - UniFi switches (CLI where available)
+  - Port profiles and configurations
+  - 802.1X setup
 
-### Juniper Configuration
+### Other Vendors (Coming Soon)
 
-**Coming in next update** - Will include specific configuration examples for:
+#### Aruba
+- ArubaOS-Switch configurations
+- ArubaOS-CX configurations
+- Aruba Central managed switches
+
+#### Juniper
 - Junos OS (EX Series)
 - QFX Series
 - SRX Series firewall integration
 
-### HPE Networking
-
-**Coming in next update** - Will include specific configuration examples for:
+#### HPE Networking
 - HPE Aruba (formerly ProCurve)
 - FlexFabric switches
-
-### Other Vendors
 
 For other vendors not listed above:
 - Look for equivalent features in your vendor's documentation
