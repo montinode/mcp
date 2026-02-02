@@ -152,6 +152,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "Guides",
+      collapsed: false,
+      items: [
+        "guides/network-security-hardening",
+      ],
+    },
+    {
+      type: "category",
       label: "Samples",
       collapsed: false,
       items: [
