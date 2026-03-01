@@ -1,0 +1,16 @@
+# Authors and Maintainers
+
+This file lists the primary authors and maintainers of the Montinode MCP repository.
+
+## Original Work
+This project is a fork of AWS Labs MCP Servers (https://github.com/awslabs/mcp)
+Original work Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+## Montinode Fork Maintainers
+
+Anwesha <64298192+anwesham-lab@users.noreply.github.com>
+
+## Contributors
+
+For a complete list of contributors, please see CONTRIBUTORS.md or run:
+  git log --format='%aN <%aE>' | sort -u
