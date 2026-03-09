@@ -1034,6 +1034,7 @@ You can use these MCP servers with your AI coding assistant to [vibe code](https
 
 ## Additional Resources
 
+### MCP Servers and AWS
 - [Introducing AWS MCP Servers for code assistants](https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/)
 - [Vibe coding with AWS MCP Servers | AWS Show & Tell](https://www.youtube.com/watch?v=qXGQQRMrcz0)
 - [Supercharging AWS database development with AWS MCP servers](https://aws.amazon.com/blogs/database/supercharging-aws-database-development-with-aws-mcp-servers/)
@@ -1050,6 +1051,11 @@ You can use these MCP servers with your AI coding assistant to [vibe code](https
 - [AWS SheBuilds: AWS Team's Journey from Internal Tools to Open Source AI Infrastructure](https://www.youtube.com/watch?v=DZFgufNCvAo)
 - [Guidance for Vibe Coding with AWS MCP servers](https://aws.amazon.com/solutions/guidance/vibe-coding-with-aws-mcp-servers/)
 - [Vibe coding with AWS MCP Servers | Hands-on Workshop](https://github.com/aws-solutions-library-samples/guidance-for-vibe-coding-with-aws-mcp-servers)
+
+### Security and Network Best Practices
+- [Network Security Hardening Guide](docs/NETWORK_SECURITY_HARDENING.md) - Comprehensive guide for preventing endpoint spoofing (host/IP/MAC/DNS) with switch-level security controls
+- [Cisco Switch Security Configuration](docs/network-security-configs/cisco-switch-security-config.md) - Detailed Cisco IOS/IOS-XE configuration examples
+- [UniFi Security Configuration](docs/network-security-configs/unifi-security-config.md) - UniFi Network Controller security setup
 
 ## Security
 
