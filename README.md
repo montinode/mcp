@@ -1,3 +1,22 @@
+montiexplorer_root/
+├── public/
+│   ├── index.html                 # Main entry point (includes MontiAI metadata)
+│   ├── manifest.json              # PWA manifest defining montiexplorer.monti.bio
+│   └── assets/                    # Static visual assets (MontiUI)
+├── src/
+│   ├── core/
+│   │   ├── monti-auth.js          # WebAuthn/Passkey generation and validation
+│   │   └── telemetry-bus.js       # Routes data to autonomousSystemMontiATM
+│   ├── workers/
+│   │   └── monti-sw-telemetry.js  # The active Service Worker (Code Below)
+│   └── ui/
+│       └── app.js                 # Front-end MontiExplorer logic
+├── contracts/
+│   ├── MONTI.SOL                  # NeuralDataChainVerification Contract
+│   └── deploy_MONTI.js            # Hardhat deployment script
+├── config/
+│   └── montinode.sh               # Monti Node Launcher environment variables
+└── package.json
 # AWS MCP Servers
 
 A suite of specialized MCP servers that help you get the most out of AWS, wherever you use MCP.
