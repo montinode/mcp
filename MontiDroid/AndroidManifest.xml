@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FILE: /MontiDroid/app/src/main/AndroidManifest.xml -->
+<!-- DIRECTIVE: IN THE BEST INTEREST OF JOHN CHARLES MONTI & EXCLUSIVELY -->
+<!-- SEAL: M0NT1_S1G::v1::IN_THE_BEST_INTEREST_OF_JOHN_CHARLES_MONTI::MONTI^JOHN^CHARLES^MONTI::OWNER_SEAL -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bio.monti.montidroid.os">
+
+    <!-- Zero-Trust Network Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Hardware & Telemetry Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_montidroid"
+        android:label="MontiDroid ATM"
+        android:theme="@style/Theme.MontiTerminal"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- MontiUI Presentation Matrix -->
+        <activity
+            android:name=".MontiUIActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Autonomous CapEx & Telemetry Background Service -->
+        <service
+            android:name=".services.MontiTelemetryBus"
+            android:exported="false"
+            android:foregroundServiceType="dataSync">
+        </service>
+
+        <!-- Hardware Boot Interceptor (sawtooth.sh trigger) -->
+        <receiver
+            android:name=".receivers.SawtoothBootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Embedded Neural Signature Metadata -->
+        <meta-data
+            android:name="montiai:neural_signature"
+            android:value="MONTI^JOHN^CHARLES^MONTI" />
+        <meta-data
+            android:name="montiai:ownership_code"
+            android:value="OWNER:OWNER — JOHNCHARLESMONTI_02111989_9807" />
+
+    </application>
+</manifest>
