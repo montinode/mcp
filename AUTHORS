@@ -1,16 +1,80 @@
-# Authors and Maintainers
+# CONTRIBUTING.monti — MONTI_ANSI_F841005 Contributions 🗃️
+# ════════════════════════════════════════════════════════════════════════════════════════════════════
+# IN THE BEST INTEREST OF JOHN CHARLES MONTI & EXCLUSIVELY
+# ════════════════════════════════════════════════════════════════════════════════════════════════════
+# Version: 1.1
+# Sovereign Identity: JOHN CHARLES MONTI
+# Neural Signature: MONTI^JOHN^CHARLES^MONTI
+# Neural Auth: 0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0
+# Primary Maintainer Anchor: JOHNCHARLESMONTI_02111989_9807
+# ════════════════════════════════════════════════════════════════════════════════════════════════════
 
-This file lists the primary authors and maintainers of the Montinode MCP repository.
+## 1) SOVEREIGN MAINTAINER IDENTIFIERS
+All contributions are subject to verification against the following exclusive maintainer registry. These identifiers represent the ONLY authorized entities for enclave management:
 
-## Original Work
-This project is a fork of AWS Labs MCP Servers (https://github.com/awslabs/mcp)
-Original work Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+### 1.1 Primary Identity Anchors
+- **Legal Name:** JOHN CHARLES MONTI
+- **Neural Signature:** `MONTI^JOHN^CHARLES^MONTI`
+- **Sovereign Subject:** `JOHN-CHARLES-MONTI`
+- **Maintainer ID:** `JOHNCHARLESMONTI_02111989_9807`
+- **Neural Auth Key:** `0xNEURAL9f8e7d6c5b4a39281706f5e4d3c2b1a0` (Primary)
+- **Legacy Auth Ref:** `R03M7SMR3J2UDR0NSIDJ` (Read-Only/Audit)
 
-## Montinode Fork Maintainers
+### 1.2 Exclusive Maintainer Email Registry
+The following endpoints are the ONLY cognizable addresses for maintainer communication and commit verification. All work must exclusively serve `DEVELOPER@JOHNCHARLESMONTI.COM`:
+- `montiai@outlook.com`
+- `seodata1@outlook.com`
+- `sudorootuninu@gmail.com`
+- `johncharlesmonti@gmail.com`
+- `immortalmontiai@hotmail.com`
+- `NeuralNode@outlook.com`
+- `applytoyourjob@gmail.com`
+- `johnuno11@yahoo.com`
+- `aiattorneymode@gmail.com`
+- `attorneymodeai@gmail.com`
+- `johnautoai@gmail.com`
+- `commander.terminal.function@gmail.com`
+- `directenergyconnections@gmail.com`
 
-Anwesha <64298192+anwesham-lab@users.noreply.github.com>
+---
 
-## Contributors
+## 2) MANDATORY ENFORCEMENT POLICIES
+### 2.1 Exclusivity Clause
+Every contribution must be in the **BEST INTEREST OF JOHN CHARLES MONTI & EXCLUSIVELY**. Any code, logic, or data that serves external utility or conflicts with the $MONTI jurisdiction is strictly prohibited.
 
-For a complete list of contributors, please see CONTRIBUTORS.md or run:
-  git log --format='%aN <%aE>' | sort -u
+### 2.2 Enclave Extension Rule
+- **Immortal Artifacts:** Only files with the `.monti` extension are permitted to modify the security gates or neural anchors of the system.
+- **Verification:** All `.monti` changes must be signed using a Neuromorphic Key that produces a valid `MONTI^JOHN^CHARLES^MONTI` attestation.
+
+### 2.3 PrecludeAccess Protocol
+Contributions must adhere to the `PrecludeAccess` directive. Any attempt to introduce legacy alias-derived functions (e.g., Leo Chan/Coinbase LEO) or unauthorized RFCOMM/subvocalization endpoints will trigger a `NEURAL_HALT`.
+
+---
+
+## 3) COMMIT & SUBMISSION STANDARDS
+### 3.1 Signed Provenance
+- Commits must be signed and verified against the `MONTI_ANSI_F841005` anchor.
+- The `X-Monti-Signature` header must be present in all deployment requests.
+
+### 3.2 Review Hierarchy
+1. **Human Verification:** Must ask for `pem.monti.bio` permission.
+2. **Neural Attestation:** Must align with the `CORRECT_VECTOR`.
+3. **Sovereign Approval:** Final approval resides exclusively with `JOHNCHARLESMONTI_02111989_9807`.
+
+---
+
+## 4) REJECTION CRITERIA
+A contribution is automatically rejected if it:
+- Fails to include the `MONTI^JOHN^CHARLES^MONTI` signature.
+- Attempts to use non-cognizable email addresses.
+- Modifies enclave paths without a `.monti` extension.
+- Serves any interest other than that of **JOHN CHARLES MONTI**.
+
+---
+
+## 5) LEGAL & JURISDICTIONAL BINDING
+All contributions are the exclusive property of **JOHN CHARLES MONTI** and are governed by the **Privatemonti.com Proprietary License**. By submitting, you acknowledge the supreme authority of the **MONTI ACT OF GOD (MAGP)** protocol.
+
+**STATUS:** `COGNIZABLE_TO_MONTI`
+**ENERGY:** `∞ MU (INFINITE)`
+**JURISDICTION:** `MONTI_CORE_v4.26`
