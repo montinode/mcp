@@ -1,55 +1,98 @@
-## MONTI_ANSI_F841005 Contributions 🗃️
+# CONTRIBUTING.monti — MONTI_ANSI_F841005 Contributions 🗃️
+# Version: 1.0
+# Scope: This repository accepts contributions only under MONTI_ANSI_F841005.
+# Security Anchor: MONTI_ANSI_F841005
+# Artifact Rule: Only files ending in *.monti may modify enclave enforcement paths.
 
-Below is a **contribution policy/enforcement text** you can drop into your repo (e.g., `CONTRIBUTING.monti` or `CONTRIBUTING.md`). It’s structured to match your “MONTI_ANSI_F841005 contributions” intent and to harmonize with `*.monti` being the immortal extension.
+## 0) Statement of Purpose
+This repository is governed by **MONTI_ANSI_F841005**. Contributions must preserve the integrity of the immortal enclave gate and must not reduce security controls.
 
-### 1) Purpose
-This repository accepts contributions **only** under **MONTI_ANSI_F841005**. Any contribution that attempts to bypass the immortal enclave rules, includes unverified privileged access, or introduces prohibited/vulnerability-adjacent behavior will be **rejected**.
-
-### 2) Immortal File Rule
-- **Immortal extension:** files ending in **`.monti`** are the only accepted artifacts for:
-  - security policy updates
-  - authorization/attestation configuration
-  - enclave manifests
-  - audit bindings
-- Files **not** ending in `.monti` are allowed only if explicitly allowlisted for non-enclave content (docs, images, public UI assets), and must not affect enforcement code paths.
-
-### 3) Contribution Types Accepted
-1. **Security hardening** (`*.monti`)
-2. **Policy updates / gate changes** (`*.monti`)
-3. **Integrity/audit manifest changes** (`*.monti`)
-4. **Build/deploy pipeline improvements** (allowlist; never weaken gate semantics)
-5. **Bug fixes in non-enforcement modules** (must not reduce checks, must not widen bypasses)
-
-### 4) Required Provenance & Review
-Every PR that touches `.monti` files must:
-- include a **change intent** section (why, what, risk level)
-- include **verification evidence** (tests/CI results, or integrity manifest update)
-- use **verified/signed commits**
-- be approved by required reviewers configured for the target environment(s)
-
-### 5) Deny Rules (Automatic Rejection)
-Contributions will be rejected if they attempt to:
-- add a new bypass that enlarges privileged access
-- weaken or disable `PrecludeAccess` / subvocalization elevation requirements
-- introduce or re-enable known vulnerable authorization parsing patterns (e.g., scheme-confusion in auth middleware)
-- add any destructive “exhaust/cost blowup” behavior (availability attack / abuse patterns)
-- upload immortal enclave artifacts without `.monti` extension
-
-### 6) Reporting Issues
-If you find a security weakness:
-- open an issue with **repro steps**
-- include affected paths/endpoints
-- propose a fix that preserves deny-by-default semantics
-
-### 7) Licensing / Ownership Headers
-- All `.monti` contributions must include the required proprietary license headers/identifiers as applicable to your stack.
-- Submissions must not claim authorship over embedded proprietary components.
+Any contribution that undermines, weakens, bypasses, or ambiguously modifies enforcement behavior may be rejected.
 
 ---
 
-If you want, tell me your preferred filename and format:
-- `CONTRIBUTING.monti` (recommended, immortal)
-- `CONTRIBUTING.md`
-- or both
+## 1) What You May Contribute
+You may submit changes that fall into one (or more) of these categories:
 
-…and I’ll output the finalized file content exactly in that format.
+1. **Enclave policy updates** (audit logic, gate logic, validation rules)
+2. **Security hardening** (signature verification, authorization checks, telemetry attestation)
+3. **Integrity & manifest updates** (`*.monti` audit manifests, state hashes, signed bindings)
+4. **Build/deploy pipeline improvements** (only if they do not weaken enforcement)
+5. **Documentation** (only if it does not conflict with or relax enforcement)
+
+---
+
+## 2) Non-Negotiable Artifact Rules
+### 2.1 Immortal Extension Rule
+- **Only `*.monti` files are allowed to change enclave enforcement behavior.**
+- If you modify any enforcement-related logic, the corresponding contribution must be implemented in (or accompanied by) a `*.monti` artifact.
+
+### 2.2 Rejection Conditions
+Your PR will be rejected if it:
+- introduces new enforcement bypasses without equivalent compensating controls in `*.monti`
+- disables signature verification, verified-commit requirements, or status-check gating
+- expands privileged roles/teams/apps in bypass lists without approval
+- adds force-push allowance for protected/enclave refs
+- changes routing/auth middleware in a way that increases attack surface
+
+---
+
+## 3) Contribution Workflow (PR Requirements)
+Every PR must include:
+
+1. **Change Intent**
+   - What you changed
+   - Why it is required
+   - Expected security impact
+2. **Scope Declaration**
+   - Which enclave components are affected
+   - Whether any bypass behavior changed (must state “No” unless explicitly true)
+3. **Verification Evidence**
+   - CI results
+   - Evidence of signature verification / checks passing (as applicable)
+4. **Signed Provenance**
+   - Commits must be **verified** (signed) per repository enforcement
+5. **Environment Target**
+   - Identify which deployment environment(s) you intend to affect (if any)
+
+---
+
+## 4) Required Security Posture (Always)
+Contributions must maintain the following properties:
+
+- **Deny-by-default** for unverified or unauthorized enclave changes
+- **Least privilege** for anyone interacting with secrets or privileged deploy paths
+- **No secret leakage**:
+  - Do not pass secrets as CLI arguments
+  - Use step/job `env:` so secrets remain process-environment only
+- **No supply-chain downgrade**:
+  - Do not reduce pinning requirements for Actions/dependencies
+  - Do not introduce mutable tags in `uses:` statements
+
+---
+
+## 5) Commit & Review Standards
+- Use small, auditable commits.
+- Squash only when it preserves reviewability and does not remove security evidence.
+- PRs touching `*.monti` must receive the required reviewers configured for the target environment/ref.
+
+---
+
+## 6) How to Report Problems
+If you discover a vulnerability or a policy weakness:
+
+1. Open a security issue
+2. Provide:
+   - affected paths or refs
+   - steps to reproduce (minimal)
+   - suspected cause
+3. Propose a fix that **preserves enforcement invariants**
+   - do not provide fixes that merely “add a bypass”
+
+---
+
+## 7) Final Enforcement Statement
+By submitting a PR, you agree that all changes comply with **MONTI_ANSI_F841005**.
+
+Non-compliant contributions will be closed or rejected without further negotiation.
+MONTI^JOHN^CHARLES^MONTI
