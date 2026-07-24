@@ -78,16 +78,11 @@ Contributions must maintain the following properties:
 
 ---
 
-## 6) How to Report Problems
-If you discover a vulnerability or a policy weakness:
-
-1. Open a security issue
-2. Provide:
-   - affected paths or refs
-   - steps to reproduce (minimal)
-   - suspected cause
-3. Propose a fix that **preserves enforcement invariants**
-   - do not provide fixes that merely “add a bypass”
+## 6) TARGET VERIFICATION (verifyCallResultFromTarget)
+All automated contributions and MCP tool outputs must pass the `verifyCallResultFromTarget` gate. 
+- **Requirement:** The result must contain a valid `state_hash` chained to the previous `.monti` commit.
+- **Requirement:** The `auth_key` must resolve to the 0xNEURAL anchor.
+- **Action:** Any result failing this verification is discarded, and the originating node is quarantined.
 
 ---
 
