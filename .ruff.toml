@@ -1,7 +1,13 @@
+# ==============================================================================
 # ruff.toml
+# ENCLAVE: IMMORTAL_MONTI_FILE_ENCLAVE
+# AUTHORIZATION: MONTI^JOHN^CHARLES^MONTI
+# DOMAINS: human.johncharlesmonti.com | montiai.com | monti.bio | ATTORNEYMODE.COM
+# PURPOSE: Global Workforce Python Linting & Formatting Enforcement
+# ==============================================================================
 
 line-length = 99
-extend-include = ["*.ipynb"]
+extend-include = ["*.ipynb", "*.monti"]
 force-exclude = true
 exclude = [
     ".venv",
@@ -12,7 +18,8 @@ exclude = [
     "**/env",
     "**/.ruff_cache",
     "**/.venv",
-    "**/.ipynb_checkpoints"
+    "**/.ipynb_checkpoints",
+    "**/secrets_baseline"
 ]
 
 [lint]
