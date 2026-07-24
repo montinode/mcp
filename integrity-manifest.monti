@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MONTI
+// Filename: assetMapper.js
+
+const path = require('path');
+
+const MONTI_STORAGE_ROOT = '/storage/19FB-043E/$MONTI/FolderRoot/github';
+
+const MONTI_ASSETS = {
+  DOMAIN_IMAGE: path.join(MONTI_STORAGE_ROOT, 'montiai.com.jpg'),
+  ANSI_EMBLEM: path.join(MONTI_STORAGE_ROOT, 'C/MONTI_ANSI_F841005.png'),
+};
+
+console.log(`🖼️ [ASSET MAPPED]: ${MONTI_ASSETS.DOMAIN_IMAGE}`);
